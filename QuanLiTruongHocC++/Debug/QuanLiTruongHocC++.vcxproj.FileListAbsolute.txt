@@ -1,0 +1,2 @@
+E:\C Programing\QuanLiTruongHocC++\Debug\QuanLiTruongHocC++.exe
+E:\C Programing\QuanLiTruongHocC++\Debug\QuanLiTruongHocC++.pdb

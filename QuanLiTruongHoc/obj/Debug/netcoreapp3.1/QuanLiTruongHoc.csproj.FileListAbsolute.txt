@@ -1,0 +1,13 @@
+E:\C Programing\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.exe
+E:\C Programing\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.deps.json
+E:\C Programing\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.runtimeconfig.json
+E:\C Programing\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.runtimeconfig.dev.json
+E:\C Programing\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.dll
+E:\C Programing\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.pdb
+E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.csprojAssemblyReference.cache
+E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.AssemblyInfoInputs.cache
+E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.AssemblyInfo.cs
+E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.csproj.CoreCompileInputs.cache
+E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.dll
+E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.pdb
+E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.genruntimeconfig.cache
