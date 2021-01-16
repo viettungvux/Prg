@@ -13,7 +13,7 @@ namespace QuanLiTruongHoc.SV
         public string StudentId { get => studentId; set => studentId = value; }
         public double Mark { get => mark; set => mark = value; }
         public double ChuyenCan { get => chuyenCan; set => chuyenCan = value; }
-        public virtual void Input()
+        public new virtual void Input()
         {
             base.Input();
             Console.Write("->Student ID: ");

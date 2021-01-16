@@ -15,7 +15,7 @@ namespace QuanLiTruongHoc.GV
             Console.Write("->He so luong: ");
             this.HeSoLuong = double.Parse(Console.ReadLine());
         }
-        public void ShowInfo()
+        public new void ShowInfo()
         {
             base.ShowInfo();
             Console.WriteLine("He so luong: "+this.HeSoLuong);

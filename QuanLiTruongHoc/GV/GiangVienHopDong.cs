@@ -16,7 +16,7 @@ namespace QuanLiTruongHoc.GV
             Console.Write("->So tiet day: ");
             this.SoNgayCong = int.Parse(Console.ReadLine());
         }
-        public void ShowInfo()
+        public new void ShowInfo()
         {
             base.ShowInfo();
             Console.Write("So tiet day: " + this.SoNgayCong);

@@ -11,3 +11,16 @@ E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.csproj.C
 E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.dll
 E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.pdb
 E:\C Programing\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.genruntimeconfig.cache
+E:\prg\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.exe
+E:\prg\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.deps.json
+E:\prg\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.runtimeconfig.json
+E:\prg\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.runtimeconfig.dev.json
+E:\prg\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.dll
+E:\prg\QuanLiTruongHoc\bin\Debug\netcoreapp3.1\QuanLiTruongHoc.pdb
+E:\prg\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.csprojAssemblyReference.cache
+E:\prg\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.AssemblyInfoInputs.cache
+E:\prg\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.AssemblyInfo.cs
+E:\prg\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.dll
+E:\prg\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.pdb
+E:\prg\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.genruntimeconfig.cache
+E:\prg\QuanLiTruongHoc\obj\Debug\netcoreapp3.1\QuanLiTruongHoc.csproj.CoreCompileInputs.cache

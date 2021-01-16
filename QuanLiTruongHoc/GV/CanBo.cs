@@ -10,13 +10,13 @@ namespace QuanLiTruongHoc.GV
         private string khoa;
 
         public string Khoa { get => khoa; set => khoa = value; }
-        public void Input()
+        public new void Input()
         {
             base.Input();
-            Console.WriteLine("->Khoa: ");
+            Console.Write("->Khoa: ");
             this.Khoa = Console.ReadLine();
         }
-        public void ShowInfo()
+        public new void ShowInfo()
         {
             base.ShowInfo();
             Console.WriteLine("Khoa: "+this.Khoa);

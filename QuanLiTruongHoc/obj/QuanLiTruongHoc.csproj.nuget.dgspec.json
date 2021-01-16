@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C Programing\\QuanLiTruongHoc\\QuanLiTruongHoc.csproj": {}
+    "E:\\prg\\QuanLiTruongHoc\\QuanLiTruongHoc.csproj": {}
   },
   "projects": {
-    "E:\\C Programing\\QuanLiTruongHoc\\QuanLiTruongHoc.csproj": {
+    "E:\\prg\\QuanLiTruongHoc\\QuanLiTruongHoc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C Programing\\QuanLiTruongHoc\\QuanLiTruongHoc.csproj",
+        "projectUniqueName": "E:\\prg\\QuanLiTruongHoc\\QuanLiTruongHoc.csproj",
         "projectName": "QuanLiTruongHoc",
-        "projectPath": "E:\\C Programing\\QuanLiTruongHoc\\QuanLiTruongHoc.csproj",
+        "projectPath": "E:\\prg\\QuanLiTruongHoc\\QuanLiTruongHoc.csproj",
         "packagesPath": "C:\\Users\\viett\\.nuget\\packages\\",
-        "outputPath": "E:\\C Programing\\QuanLiTruongHoc\\obj\\",
+        "outputPath": "E:\\prg\\QuanLiTruongHoc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\viett\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Collections.NonGeneric": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

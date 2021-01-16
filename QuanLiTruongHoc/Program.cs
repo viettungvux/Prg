@@ -2,6 +2,7 @@
 using QuanLiTruongHoc.SV;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace QuanLiTruongHoc
 {
@@ -9,79 +10,161 @@ namespace QuanLiTruongHoc
     {
         static void Main(string[] args)
         {
-            SinhVien[] lopHoc = new SinhVien[100];
-
-            int key = 0;
-            Console.WriteLine("Nhap thong tin giang vien chu nhiem");
-            do
-            {
-                Console.WriteLine("1. GV hop dong");
-                Console.WriteLine("2. GV bien che");
-                Console.Write("Chon kieu giao vien: ");
-                key = int.Parse(Console.ReadLine());
-                switch (key)
-                {
-                    case 1:
-                        GiangVienHopDong gvhd = new GiangVienHopDong();
-                        gvhd.Input();
-
-                        break;
-                    case 2:
-                        GiangVienBienChe gvbc = new GiangVienBienChe();
-                        gvbc.Input();
-                        break;
-                    default:
-                        Console.WriteLine("Giang vien khong hop le");
-                        break;
-                }
-            } while (key != 1 && key != 2);
-            Console.WriteLine("Nhap thong tin cac sinh vien");
-            int i = 0;
-            do
-            {
-                Console.WriteLine("=============================");
-                Console.WriteLine("1. Sinh vien Kinh te");
-                Console.WriteLine("2.Sinh vien CNTT");
-                Console.WriteLine("0. Thoat");
-                Console.WriteLine("=============================");
-                Console.Write("Chon kieu sinh vien: ");
-                key = int.Parse(Console.ReadLine());
-                switch (key)
-                {
-                    case 1:
-                        lopHoc[i] = new SinhVienKinhTe();
-                        lopHoc[i].Input();
-                        break;
-                    case 2:
-                        lopHoc[i] = new SinhVienCNTT();
-                        lopHoc[i].Input();
-                        break;
-                    case 0:
-                        Console.WriteLine("Dang thoat CT");
-                        break;
-                    default:
-                        Console.WriteLine("Chuc nang khong hop le!");
-                        break;
-                }
-                i++;
-            } while (key != 0);
-
-            ///In Danh sách sinh viên thuộc khoa CNTT
-            foreach (SinhVien sv in lopHoc)
-            {
-                if (sv is SinhVienCNTT)
-                {
-                    sv.ShowInfo();
-                }
-            }
-            SinhVien sv1 = new SinhVien();
-            SinhVien sv2 = new SinhVienCNTT();
-            sv1.Input();
-            sv2.Input();
-            if (sv1 == sv2)
-            {
-
-            }
-        }
+			var lop = new List<SinhVien>();
+			GiangVienBienChe gvbc = new GiangVienBienChe();
+			GiangVienHopDong gvhd = new GiangVienHopDong();
+			int flag=0;
+			int key=0;
+			do
+			{
+				Console.WriteLine("=====================&Manage School&=====================");
+				Console.WriteLine("1. Nhap thong tin giao vien");
+				Console.WriteLine("2. Xem thong tin giang vien");
+				Console.WriteLine("3. Nhap thong tin sinh vien");
+				Console.WriteLine("4. Xuat thong tin sinh vien cua lop");
+				Console.WriteLine("5. Tim kiem sinh vien theo ten");
+				Console.WriteLine("6. In diem trung binh cua cac sinh vine");
+				Console.WriteLine("0. Thoat");
+				Console.WriteLine("=====================&Manage School&=====================");
+				Console.Write(" Chon chuc nang: ");
+				key = int.Parse(Console.ReadLine());
+				switch (key)
+				{
+					case 0:
+						break;
+					case 1:
+						{
+							int func = 0;
+							do
+							{
+								Console.Clear();
+								Console.WriteLine("==============&Quan li Giang vien&=============");
+								Console.WriteLine("1. Giao vien bien che");
+								Console.WriteLine("2. Giao vien hop dong");
+								Console.WriteLine("0. Thoat");
+								Console.WriteLine("==============&Quan li Giang vien&=============");
+								Console.Write("Chon giao vien: ");
+								func = int.Parse(Console.ReadLine());
+								switch (func)
+								{
+									case 0:
+										break;
+									case 1:
+										{
+											flag = 0;
+											gvbc.Input();
+											break;
+										}
+									case 2:
+										{
+											flag = 1;
+											gvhd.Input();
+											break;
+										}
+									default:
+										Console.WriteLine("Chuc nang khong hop le!");
+										break;
+								}
+							} while (func != 0);
+							Console.Clear();
+							break;
+						}
+					case 2:
+						if (flag == 0)
+						{
+							gvbc.ShowInfo();
+							Console.WriteLine("Luong: "+ gvbc.TinhLuong());
+						}
+						else
+						{
+							gvhd.ShowInfo();
+							Console.WriteLine( "Luong: "+ gvhd.TinhLuong());
+						}
+						break;
+					case 3:
+						{
+							Console.Clear();
+							int func = 0;
+							do
+							{
+								Console.Clear();
+								Console.WriteLine("==============&Quan li Sinh vien&=============");
+								Console.WriteLine("1. Sinh vien kinh te");
+								Console.WriteLine("2. Sinh vien cntt");
+								Console.WriteLine("0. Thoat" );
+								Console.WriteLine("==============&Quan li Sinh vien&=============");
+								Console.Write( "Chon sinh vien: ");
+								func = int.Parse(Console.ReadLine());
+								switch (func)
+								{
+									case 0:
+										break;
+									case 1:
+										var sv = new SinhVienKinhTe();
+										sv.Input();
+										lop.Add(sv);
+										break;
+									case 2:
+										var sv1 = new SinhVienCNTT();
+										sv1.Input();
+										lop.Add(sv1);
+										break;
+									default:
+										Console.WriteLine("Chuc nang khong hop le!");
+										break;
+								}
+							} while (func != 0);
+							Console.Clear();
+							break;
+						}
+					case 4:
+						Console.WriteLine("Thong tin cac sinh vien");
+						foreach(SinhVien s in lop){
+							s.ShowInfo();
+                        }
+						break;
+					case 5:
+						{
+							string name;
+							Console.Write("Nhap ten sinh vien muon tim: ");
+							name = Console.ReadLine();
+							int mark = 0;
+							
+							for (int i = 0; i < lop.Capacity; i++)
+							{
+                                if (lop[i].Name == name)
+                                {
+									lop[i].ShowInfo();
+									mark = 1;
+                                }
+							}
+							if (mark == 0)
+							{
+								Console.WriteLine("Khong tim thay sinh vien nao co ten "+name);
+							}
+							break;
+						}
+					case 6:
+						{
+							for (int i = 0; i < lop.Capacity; i++)
+							{
+								if (flag == 0)
+								{
+									Console.WriteLine("Ten: " + lop[i].Name + "----------Diem: " + gvbc.ChamDiem(lop[i].Mark, lop[i].ChuyenCan));
+								}
+								else
+								{
+									Console.WriteLine("Ten: " + lop[i].Name + "----------Diem: " + gvhd.ChamDiem(lop[i].Mark, lop[i].ChuyenCan));
+								}
+							}
+							break;
+						}
+					default:
+						Console.WriteLine("Chuc nang khong hop le");
+						break;
+				}
+				//Console.Clear();
+			} while (key != 0);
+		}
     }
 }
